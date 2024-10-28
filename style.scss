@@ -1,0 +1,153 @@
+@import "/resetter.scss";
+
+body {
+  width: 90%;
+  margin: auto;
+  background-color: hsl(13, 31%, 94%);
+}
+
+.main-container {
+  display: block;
+}
+
+.product {
+  position: relative;
+  border-radius: 10px;
+  background-color: hsl(13, 31%, 94%) !important;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.product-category {
+  color: hsl(7, 20%, 60%);
+  margin-top: 5px;
+}
+
+.product-name {
+  font-size: 1rem;
+  background-color: hsl(13, 31%, 94%);
+  color: black;
+  margin: 0.5rem 0;
+}
+
+.image-container {
+  position: relative;
+  background-color: hsl(13, 31%, 94%);
+  width: 100%;
+}
+
+.add-to-cart {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 2px solid grey;
+  background-color: white;
+  cursor: pointer;
+  left: 50%;
+
+  bottom: 70px;
+  transform: translateX(-50%);
+}
+
+.cart-icon {
+  margin-right: 5px;
+}
+.cart-container{
+  background-color: white;
+  h1{
+    color: red;
+    size: 10px;
+  }
+}
+
+
+
+@media (min-width: 600px) {
+  body {
+    width: 90%;
+    margin: auto;
+  }
+
+  .main-container {
+    display: flex;
+    margin-top: 2rem;
+  }
+  h1 {
+    margin-bottom: 1rem;
+  }
+  .products {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .data-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .product {
+    position: relative;
+    border-radius: 10px;
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    gap: 10px;
+  }
+
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-category {
+    color: hsl(7, 20%, 60%);
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+
+  .product-name {
+    font-size: 1rem;
+    color: black;
+    margin: 0.5rem 0;
+  }
+  .product-price {
+    color: hsl(14, 86%, 42%);
+  }
+
+  .add-to-cart {
+    
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 2px solid grey;
+    background-color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  .cart-container {
+    width: 40%;
+    height: 500%;
+  }
+}
+@media (min-width: 375px) and (max-width: 600px) {
+  .data-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .product {
+    width: 48%;
+    margin-bottom: 1rem;
+  }
+}
